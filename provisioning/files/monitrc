@@ -1,3 +1,0 @@
-set httpd port 8711 and
-use address localhost
-allow localhost

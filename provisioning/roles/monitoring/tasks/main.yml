@@ -1,0 +1,9 @@
+---
+- name: Install Monit
+  apt: pkg=monit state=installed
+
+- name: Copy Settings
+  template: src=monitrc dest=/etc/monit/conf.d/ckan.conf
+
+- name: Restart Monit service
+  service: name=monit state=restarted

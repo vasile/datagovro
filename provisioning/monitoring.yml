@@ -1,0 +1,4 @@
+---
+- hosts: gov-mon
+  roles:
+    - role: monitoring
