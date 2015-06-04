@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -X POST --data-urlencode 'payload={"channel": "#datagovro-dev", "username": "'$MONIT_HOST'-monit-alert", "text": "['$MONIT_HOST'] '$MONIT_SERVICE' - '$MONIT_DESCRIPTION'", "icon_emoji": ":ghost:"}' $PUSHBULLET_URL
